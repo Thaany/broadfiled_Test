@@ -28,12 +28,12 @@
                 if (path.endsWith('index.html')) {
                     path = path.substr(path, path.length - 'index.html'.length);
                 }
-                var url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'map.json';
+                var url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'map1.json';
                 document.getElementById('mapLink').href = url;
                 document.getElementById('mapLink2').href = url;
                 document.getElementById('mapLink').innerText = url;
 
-                var mapUrl = window.location.protocol+'//'+window.location.host+path+'map.json';
+                var mapUrl = window.location.protocol+'//'+window.location.host+path+'map1.json';
                 document.getElementById('mapUrl').innerText = mapUrl;
 
                 var gettingStartedLink = 'https://workadventu.re/getting-started?name=Map&mapUrl='+mapUrl;
